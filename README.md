@@ -1,6 +1,6 @@
 # Amazon 全流程运营 SOP 知识库
 
-> 一套**可执行、可验证、可长期维护**的 Amazon 跨境电商运营操作系统。
+> 一套**可执行、可验证、可长期维护**的 Amazon 跨境电商运营知识库。
 > 不是经验分享文章合集，而是带**证据等级**、带**决策树**、带**检查清单**、带**计算器**的作战手册。
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
