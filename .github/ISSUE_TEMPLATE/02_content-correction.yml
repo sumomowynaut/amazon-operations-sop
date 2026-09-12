@@ -1,0 +1,46 @@
+name: 内容纠错
+description: 报告事实错误、逻辑矛盾、失效链接或计算错误
+title: "[纠错] "
+labels: ["correction"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: 涉及文件
+      description: 仓库内的相对路径
+      placeholder: "05_流量与广告/05-11_广告诊断与优化循环.md"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 请指明行号/章节，并说明为什么这是错的
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议修改为
+    validations:
+      required: false
+  - type: input
+    id: source
+    attributes:
+      label: 依据来源（如有）
+      description: 官方链接请附访问日期；经验类请标注为 D 级
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 事实错误
+        - 逻辑矛盾 / 内部冲突
+        - 链接失效
+        - 计算 / 公式错误
+        - 表述不清 / 不可执行
+        - 排版 / 格式问题
+    validations:
+      required: true

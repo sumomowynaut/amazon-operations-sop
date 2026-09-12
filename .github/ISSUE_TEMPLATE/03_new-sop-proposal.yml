@@ -1,0 +1,50 @@
+name: 新增 SOP 提案
+description: 提议新增一份 SOP 文档（请先讨论再提 PR）
+title: "[提案] "
+labels: ["proposal"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: 归属模块
+      description: 00-12 中的哪个领域？如果是新领域请说明理由
+      placeholder: "07_库存与物流"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: SOP 标题
+      placeholder: "07-07_多渠道履约与切换"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么需要这份 SOP
+      description: 现有文档覆盖不了什么场景？不新增会有什么后果？
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: 17 节结构大纲
+      description: 按统一结构列出各节要点（目的/场景/概念/指标/决策树/流程/前后检查/成功标准/失败处理/常见错误/风险/案例/Checklist/数据模板/复盘/关联模块）
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据来源计划
+      description: 你打算用哪些 A/B/C 级来源？哪些部分会是 D 级经验？
+    validations:
+      required: true
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认会在正文中为关键事实标注证据等级
+          required: true
+        - label: 我确认不会提交真实店铺数据、ASIN、个人信息或商业机密
+          required: true

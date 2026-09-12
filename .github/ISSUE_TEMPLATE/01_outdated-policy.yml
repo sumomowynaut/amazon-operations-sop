@@ -1,0 +1,63 @@
+name: 政策 / 费率过期反馈
+description: 报告因 Amazon 平台政策或费率变化而失效的内容
+title: "[过期] "
+labels: ["outdated", "A级来源"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！平台政策与费率变化很快，这类 Issue 对项目最有价值。
+
+        **请注意**：报告的当前正确内容必须附 **Amazon 官方链接 + 访问日期**（A 级来源），否则只能作为待验证线索处理。
+  - type: input
+    id: file
+    attributes:
+      label: 涉及文件
+      description: 请填写仓库内的相对路径，例如 `09_利润与财务/09-02_费用构成与计算.md`
+      placeholder: "09_利润与财务/09-02_费用构成与计算.md"
+    validations:
+      required: true
+  - type: input
+    id: lines
+    attributes:
+      label: 行号 / 章节
+      placeholder: "第 45-52 行，或「3.2 FBA 配送费」"
+    validations:
+      required: false
+  - type: textarea
+    id: outdated
+    attributes:
+      label: 哪部分已过期
+      description: 引用原文，并说明问题
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前正确内容
+      description: 请给出你在官方页面看到的当前值/规则
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方来源链接
+      description: Seller Central / Seller University / Amazon Ads 官方页面链接
+      placeholder: "https://sellercentral.amazon.com/..."
+    validations:
+      required: true
+  - type: input
+    id: access_date
+    attributes:
+      label: 访问日期
+      placeholder: "2026-09-12"
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: 站点 / 区域
+      description: 不同站点费率不同，请注明
+      placeholder: "US / EU / JP ..."
+    validations:
+      required: false

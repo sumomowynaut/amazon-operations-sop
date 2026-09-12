@@ -1,0 +1,33 @@
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- Editors ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- Build artifacts ----
+# 生成的 PDF 不进版本库，通过 GitHub Releases 分发
+*.pdf
+*.pdf.tmp
+build/
+dist/
+
+# ---- Local / private ----
+# 本地私有数据、真实店铺数据、原始案例数据不要提交
+local/
+private/
+*.local.md
+*.secret.*
+.env
